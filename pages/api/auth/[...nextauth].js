@@ -15,7 +15,7 @@ const User=require('../../../models/User')
 export default NextAuth({
   session: {
     strategy: 'jwt',
-    maxAge:30*24*3600 // en secondes
+    maxAge:3600 // en secondes
   },
   providers: [
     CredentialsProvider({
